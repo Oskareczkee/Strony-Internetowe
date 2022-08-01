@@ -1,0 +1,197 @@
+@import url('http://fonts.cdnfonts.com/css/doom-2016-left');
+
+body{
+    background-image: url("../Images/DoomBackground.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-size: 1em;
+    font-family: 'Doom 2016 Text', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap:row wrap;
+    justify-content:left;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(120, 2, 2);
+    background: radial-gradient(circle, rgba(84,5,21,0.5578606442577031) 53%, rgba(99,0,0,0.7203256302521008) 89%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar #logo{
+    height: 54px;
+    margin-top: 4px;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.navbar #content{
+    top: 0px;
+    right: 25%;
+    left: 25%;
+    margin-top: 3px;
+    table-layout: fixed;
+    width: 1000px;
+}
+
+.navbar #content td{
+    height: 60px;
+    text-transform: uppercase;
+    text-decoration:overline;
+    font-family: 'Doom 2016 Text', sans-serif;
+    font-size: 30pt;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.navbar #content td.one{
+    width: auto;
+}
+.navbar #content td.two{
+    width: auto;
+}
+.navbar #content td.three{
+    width: auto;
+}
+.navbar #content td.four{
+    width: auto;
+    padding-right: 6rem;
+}
+
+.navbar #content a{
+    text-decoration: none;
+    color: rgb(169, 41, 41);
+}
+
+.navbar #content a:hover{
+    color: orange;
+    text-shadow: 0px 0px 10px red;
+    font-size: 32pt;
+}
+
+
+.content{
+    display: inline;
+    width: 65%;
+    min-width: 300px;
+    min-height: 500px;
+    margin-top: 150px;
+    margin-left: 10%;
+    background-color: #210101a5;
+    float: left;
+}
+
+h1{
+    padding-left: 1.5rem;
+    margin-top: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #ffffff1c;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-top: 4px solid rgb(138, 1, 1);
+}
+
+p{
+    color: beige;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.stats{
+    display: inline;
+    margin-top: 150px;
+    width: 270px;
+    min-width: 200px;
+    min-height: 200px;
+    vertical-align: top;
+    padding-bottom: 10px;
+    margin-left: 4%;
+    float: left;
+}
+
+.stats table{
+    color: beige;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+}
+
+.stats table td{
+    width: 50%;
+}
+
+.stats td#number{
+    text-align: right;
+    padding-right: 1.5rem;
+    width: 20%;
+}
+
+.stats#weapons{
+    margin-top: 2rem;
+}
+
+.gallery{
+    display: block;
+    position: relative;
+    margin: 0 auto 60px auto;
+    width: 85%;
+    left: 7.5%;
+    top: 40px;
+    min-height: 400px;
+    box-shadow: 0px 0px 20px rgb(106, 0, 0);
+}
+
+.gallery .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+.gallery .entry{
+    display: inline-block;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: 720px;
+    max-height: 420px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 10px rgb(145, 72, 19);
+    align-content: center;
+}
+
+.gallery .entry img{
+    width: 20rem;
+    height: 15rem;
+    max-width: 720px;
+    max-height: 420px;
+}
+
+.gallery .entry figcaption{
+    width: 20rem;
+    height: fit-content;
+
+    color: beige;
+    background-color: #ffffff1c;
+    font-size: 2rem;
+    padding-top: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}

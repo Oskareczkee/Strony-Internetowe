@@ -1,0 +1,79 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    font-size: 120%;
+    color: #5a5853;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 8px 4px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    background-color: #ffffff;
+    border: 1px solid #b1e1e4;
+}
+
+input#email{
+    background-image: url("../Images/e-mail.svg");
+}
+
+input#twitter{
+    background-image: url("../Images/twitter.svg");
+}
+
+input#web{
+    background-image: url("../Images/web.svg");
+}
+
+input#submit{
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #8a0202;
+    border: 2px solid #800101;
+    background: radial-gradient(circle, rgba(210,11,11,1) 0%, rgba(124,39,39,1) 100%);
+    padding: 5px 10px 5px 10px;
+    text-align: center; 
+    position: relative;
+    float: right;
+}
+
+input#submit:hover{
+    border: 2px solid #ffffff;
+    color: rgb(255, 170, 0);
+    background: radial-gradient(circle, rgba(235,11,11,1) 0%, rgba(134,39,39,1) 100%);
+}
+
+fieldset{
+    width: fit-content;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    display: inline-table;
+    vertical-align: top;
+}
+
+legend{
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.input-title{
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    color: beige;
+}

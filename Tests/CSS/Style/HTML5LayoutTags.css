@@ -1,0 +1,125 @@
+body{
+    background-color: whitesmoke;
+}
+header{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: nowrap;
+
+    background-color: rgb(227, 43, 43);
+    height: 20px;
+    width: 100%;
+}
+
+header #logo{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    margin-left: 5%;
+    width: 9rem;
+    height: 130px;
+    font-size: 0.8rem;
+    padding: 3px 10px 8px 10px;
+    background-color: rgb(227, 43, 43);
+}
+
+header #logo h1{
+    color:rgb(246, 209, 0);
+    margin: 0.9rem 0 0 0;
+}
+
+header #logo img{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    /*image is not ideally centered due to its size properties*/
+    left: -4%;
+    top: 1rem;
+}
+  
+header nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    background-color: rgb(132, 129, 129);
+    height: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+header nav ul{
+    display: block;
+    position: relative;
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    bottom: 35%;
+}
+
+header nav li{
+    display: inline-block;
+    padding: 0 5rem 0rem 5rem;
+    margin-bottom: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header nav a:hover{
+    color: rgb(248, 174, 1);
+    text-shadow: 0px 0px 5px black;
+}
+
+.first-section{
+    position: fixed;
+    z-index: -9999;
+    top: 0;
+    left: 0;
+    background-image: url("../Images/dogBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.first-section article{
+    position: relative;
+    top: 20rem;
+    left: 10%;
+    width: 500px;
+    text-align: center;
+}
+
+.first-section article hr{
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.first-section article h1{
+    color: rgb(232, 3, 3);
+    text-shadow: 0px 0px 2px black;
+    font-size: 3rem;
+    margin: 0;
+}
+.first-section article p{
+    color: white;
+    font-size: 2rem;
+}
+
+.first-section #important
+{
+    color: rgb(232, 3, 3);
+    font-size: 2.5rem;
+    font-weight: 550;
+}

@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Forms showcase in HTML</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <p>
+                Username:
+                <input type="text" name="username" size="15" maxlength="30" required/>
+            </p>
+        </form>
+
+        <!--Our server should have SSL configured to safely transfer info like passwords-->
+        <form action="" method="post">
+            <p>
+                Password:
+                <input type="password" name="password" size="15" maxlength="30" required/>
+            </p>
+        </form>
+        <form action="" method="get">
+            <p>Tell us something about you: </p>
+                <textarea name="about you" cols="30" rows="4" placeholder="Write something about you here..."></textarea>
+        </form>
+
+        <form action="" method="get">
+            <p>Choose your favourite music genre: 
+                <br>
+                <input type="radio" name="genre" value="rock" checked>Rock
+                <input type="radio" name="genre" value="pop">Pop
+                <input type="radio" name="genre" value="Jazz">Jazz
+            </p>
+        </form>
+        <form action="" method="get">
+            <p>Choose your favourite music service
+                <br>
+                <input type="checkbox" name="service" value="itunes">iTunes
+                <input type="checkbox" name="service" value="lastfm">Last.Fm
+                <input type="checkbox" name="service" value="spotify">Spotify
+            </p>
+        </form>
+        <!--we can use select option with multiple and size to allow choosing multiple options, but idk if this is good design so i didnt show it here-->
+        <form action="" method="get">
+            <p>What device are you using to listen to music?</p>
+            <select name="devices">
+                <option value="ipod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+            </select>
+        </form>
+
+        <!--in book they say, that file input should create with label which would contain file name, but it looks like now it does not come with label, but we can always create our own and
+        write script to show file name in this label-->
+        <!--If we want to upload file form must have post method-->
+        <!--submit has name variable but it is not used-->
+        <form action="" method="post">
+            <p>Upload our favourite song in .mp3 format</p>
+            <input type="text" name="fileName" width="15" placeholder="your file name" readonly>
+            <input type="file" name="user-song"> <br>
+            <input type="submit" value="Upload">
+        </form>
+        <form action="">
+            <p>Subscribe our bulletin</p>
+            Email: <input type="text" name="e-mail" />
+            <br>
+            <input type="image" name="subscribe" src="C5 Images/subsrcibe.png" width="100" height="30" />
+        </form>
+        <!--Button allows to create better buttons-->
+        <form action="">
+            <button>
+                <img src="C5 Images/prawda boża.png" alt="Subscribe" width="100" height="30">Subscribe
+            </button>
+            <!--We use hidden inputes to store some info, but there is no need to show it to the user-->
+            <input type="hidden" name="bookmark" value="poem">
+        </form>
+        <br>
+        <hr>
+        <br>
+        <label>Wiek: <input type="text" name="age"></label>
+        <br>
+        <input type="radio" id="female" name="gender" value="f">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="m">
+        <label for="male">Male</label>
+
+        <fieldset style="width:fit-content;">
+            <legend>Contact</legend>
+            <label>E-mail: <br>
+                <input type="email" name="email">
+                <br>
+            </label>
+            <label>Phone number: <br>
+                <input type="text" name="email">
+                <br>
+            </label>
+            <label>Address: <br>
+                <input type="text" name="address">
+                <br>
+            </label>
+        </fieldset>
+        <fieldset style="width:fit-content;">
+            <legend>More info</legend>
+            <label>Date of birth: <input type="date" name="birthdate"></label><br>
+            <label>Website URL <input type="url" name="websiteurl"></label><br>
+            <label>Find Something <br> <input type="text" name="find" placeholder="what are you looking for?"></label> <input type="submit" value="Search">
+        </fieldset>
+    </body>
+</html>

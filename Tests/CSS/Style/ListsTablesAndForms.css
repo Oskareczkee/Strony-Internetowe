@@ -1,0 +1,47 @@
+body{
+    background-image: url("../Images/DoomBackground.png");
+    background-repeat: no-repeat;
+    cursor: url(../Images/sus\ cursor.png), auto !important;
+}
+
+#navbar{
+    width: 84%;
+    margin: 20px auto 20px auto;
+    padding: 5px 20px 5px 20px;
+    background: radial-gradient(circle, rgba(84,5,21,0.5578606442577031) 53%, rgba(99,0,0,0.7203256302521008) 89%);
+    border-radius: 10px;
+    border-top: 2px solid rgb(184, 0, 0);
+    border-bottom: 2px solid rgb(184, 0, 0);
+}
+
+#navbar td{
+   background-color: inherit;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.15em;
+    color: #f1f1f1;
+    border-radius: 5px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 5px 20% 5px 20%;
+}
+
+#navbar a:hover, a.on{
+    background-color: rgba(161, 9, 9, 0.497);
+    border-radius: 5px;
+    cursor: url(../Images/sus\ cursor.png), auto !important;
+}
+
+#iframe{
+    width: 84%;
+    border-radius: 10px;
+    margin: 60px auto 20px auto;
+    background: radial-gradient(circle, rgba(84,5,21,0.5578606442577031) 53%, rgba(99,0,0,0.7203256302521008) 89%);
+    border: 2px solid rgb(184, 0, 0);
+    min-height: 720px;
+    display: block;
+}
