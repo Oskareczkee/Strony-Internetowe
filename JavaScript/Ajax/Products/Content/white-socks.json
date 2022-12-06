@@ -1,0 +1,9 @@
+{
+    "productImage": "Images/skarpetki.png",
+    "producent": "Szport",
+    "name": "Białe skiety",
+    "price": 15,
+    "currency": "ziko",
+    "sizes": [34,35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,46,47],
+    "descriptionHTML": "Firma Szport specjalizuje się w tworzeniu najbardziej spierdolonych skarpet na tym świecie. W tym modelu również nas nie zawiedli <br> Do zalet można zaliczyć: <br><ul><li>zjebaną jakość</li><li>smród jakiego świat nie czuł</li><li>zjebany młodzieżowy napis</li><li>mylą się w rozmiarze XD bo są z chin i nie ukończyli szkoły</li></ul>Zapraszamy do kupna i życzymy miłych zakupów"
+}

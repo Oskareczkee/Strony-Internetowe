@@ -1,0 +1,124 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header::before{
+    background-image: url("Images/gatto.jpg");
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%; 
+    }
+}
+
+header::before{
+    background-image: url("Images/gallerybg.jpg");
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    position: relative;
+}
+
+.gallery::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/Gallery/img-containter-bg.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 5%;
+}
+
+.gallery .images-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.gallery .images-container img{
+    width: 125px !important;
+    height: 125px !important;
+    margin: 1vh 1vw;
+    transition: transform .4s ease-in-out;
+    border-radius: 5px;
+}
+
+.gallery .images-container img:hover{
+    transform: scale(1.1);
+}
+
+.gallery #big-image{
+    width: 600px !important;
+    height: 600px !important;
+    border-radius: 5px;
+}
+
+.marquee-wrapper{
+    width: fit-content;
+    align-self: center;
+    overflow: hidden;
+    background-color: rgba(33, 32, 32, 0.556);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.marquee{
+    position: relative;
+    animation: marquee 5s infinite linear;
+}
+
+.insta-check{
+    margin: 20px 0px;
+    padding: 0;
+    align-self: center;
+    font-family: tiempos-bold;
+    font-size: 2rem;
+    color: goldenrod;
+}
+
+@media (max-width: 1024px){
+    .gallery .images-container img{
+        width: 15%;
+        height: 15%;
+    }
+
+    .gallery #big-image{
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .insta-check{
+        font-size: 1rem;
+        margin: 10px 0px;
+    }
+
+    .gallery .images-container img{
+        width: 72.5px !important;
+        height: 72.5px !important;
+    }
+}

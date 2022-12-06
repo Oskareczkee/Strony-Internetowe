@@ -1,0 +1,267 @@
+@font-face {
+    font-family: tiempos;
+    src: url("Images/TiemposHeadline-Black.otf");
+}
+
+@font-face {
+    font-family: tiempos-light;
+    src: url("Images/TiemposHeadline-Light.otf");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-color);
+}
+
+:root{
+    --text-color: #ffffff;
+}
+
+.container{
+    display: block;
+}
+
+.page-top{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 45vh;
+
+    background-image: url("Images/background.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-top nav{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+    width: 40%;
+    height: 50px;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.page-top nav .nav-links{
+    margin-left: 1%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.page-top nav img{
+    width: 25%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.page-top nav a{
+    text-decoration: none;
+    color: var(--text-color);
+
+    font-family: tiempos;
+    font-size: 1.2vw;
+    letter-spacing: 0.05em;
+
+    transition: color .3s ease-in-out;
+}
+
+.page-top nav a.active{
+    border-radius: 3px;
+    border-bottom: 5px solid orangered;
+
+    padding-bottom: 5px;
+}
+
+.page-top nav a:hover:not(.active){
+    color: olivedrab;
+}
+
+.page-top .top-info{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.top-info h1{
+    color: orangered;
+    font-family: tiempos;
+    letter-spacing: 0.05em;
+    font-size: 2.3rem;
+
+    margin-bottom: -5px;
+}
+
+.top-info p{
+    font-family: tiempos-light;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.adopt-button{
+    width: 200px;
+    padding-top: 5px;
+
+    font-family: tiempos-light;
+    background-color: rgb(246, 195, 100);
+    color: black;
+    font-size: 1.1rem;
+
+    border-radius: 20px;
+    transition: background-color .3s ease-in-out;
+}
+
+.adopt-button:hover{
+    background-color: rgb(245, 170, 32);
+}
+
+
+
+.top-buttons{
+    justify-self: center;
+    align-self: center;
+    margin-top: -5%;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.top-buttons .top-button{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 150px;
+    max-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 10%;
+
+    transition: transform .5s ease-in-out;
+}
+
+.top-buttons .top-button:hover{
+    transform: translate(0px,-25px);
+    cursor: pointer;
+}
+
+.top-button img{
+    width: 65%;
+    height: 65%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.top-button p{
+    font-family: tiempos;
+    margin-top: 15%;
+}
+
+
+.cats-wrapper{
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    margin-top: -6%;
+
+    padding-bottom: 50px;
+}
+
+.cats-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.cats-content .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.cats-content .header h3{
+    font-size: 2rem;
+    font-family: tiempos;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+}
+
+.cats-content .header p{
+    font-size: 0.9rem;
+    font-family: tiempos-light;
+    margin-top: 10px;
+}
+
+.cats-content .cats-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content: space-evenly;
+
+    margin: 0px 5%;
+}
+
+.cats-container .cat{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 10px black;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+
+    transition: transform .3s ease-in-out;
+}
+
+.cats-container .cat:hover{
+    transform: scale(1.1);
+}
+
+.cat img{
+    width: 250px;
+    height: 180px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+
+    margin-top: -15%;
+}
+
+.cat p{
+    text-align: center;
+    
+    font-family: tiempos;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+

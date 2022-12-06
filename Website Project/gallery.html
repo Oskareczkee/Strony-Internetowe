@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="top">
+        <nav>
+            <a href="index.html">Strona Główna</a>
+            <div class="dropdown">
+                <button class="dropbtn">Języki
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="languages.html">Języki</a>
+                    <a href="languages.html#javascript">JavaScript</a>
+                    <a href="languages.html#python">Python</a>
+                    <a href="languages.html#php">PHP</a>
+                    <a href="languages.html#cpp">C++</a>
+                    <a href="languages.html#rust">Rust</a>
+                </div>
+            </div>
+            <a href="gallery.html" class="active">Galeria</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <div class="header-content">
+            <h3>Galeria</h3>
+            <h1>Przeglądaj najnowsze zdjęcia</h1>
+            <a href="#gallery">Sprawdź</a>
+        </div>
+    </header>
+
+
+    <div class="gallery" id="gallery">
+        <img src="Images/Gallery/1.png" alt="image" id="big-image">
+        
+        <div class="images-container">
+            <img src="Images/Gallery/1.png" alt="image">
+            <img src="Images/Gallery/2.png" alt="image">
+            <img src="Images/Gallery/3.png" alt="image">
+            <img src="Images/Gallery/4.png" alt="image">
+            <img src="Images/Gallery/5.png" alt="image">
+        </div>
+        <div class="marquee-wrapper">
+            <p class="insta-check marquee">Wpadnij na insta po więcej zdjęć!</p>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="#top">Na górę</a>
+        <p>&copy; Oskar Niedźwiedzki <br>2022</p>
+    </footer>
+
+
+    <script src="gallery.js"></script>
+</body>
+</html>

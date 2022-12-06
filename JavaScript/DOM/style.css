@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "RoyalFont";
+    src: url(Images/QueenFont.ttf);
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.header img{
+    height: 150px;
+}
+
+.header p{
+    color: gold;
+    font-family: RoyalFont;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.list .list-item{
+    background-color: blue;
+    color: white;
+    padding: 5px 20px 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.done{
+    background-color: gray !important; 
+}
+
+.important{
+    background-color: red !important;
+}
+
+.chill{
+    background-color: forestgreen !important;
+}
+
+.middle{
+    background-color: orangered !important;
+}
+
+.list .list-header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    font-family: serif;
+    letter-spacing: 0.05em;
+    font-size: 3rem;
+}
+
+.form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, select{
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.form p{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.form button{
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+    padding: 5px;
+
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.form button:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.form p{
+    color: orange;
+}

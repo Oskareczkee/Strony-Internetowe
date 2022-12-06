@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some random UI elements</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        Facts about <span style="color: orange">oranges</span> you should know!
+    </div>
+
+    <ul class="accordion">
+        <li>
+            <div class="accordion-control">What is orange?</div>
+            <div class="accordion-panel">Orange is a fruit</div>
+        </li>
+        <li>
+            <div class="accordion-control">How does it taste?</div>
+            <div class="accordion-panel">It is sweet and little bit sour. It just tastes like an orange!</div>
+        </li>
+        <li>
+            <div class="accordion-control">Is it worth to buy it and eat?</div>
+            <div class="accordion-panel">YES!!!</div>
+        </li>
+    </ul>
+
+    <div class="cards">
+        <div class="tab-container">
+            <div class="tab">Fun facts about oranges
+                <span class="content">Oranges are rich in vitamin C and are very tasty!</span>
+            </div>
+            <div class="tab active">Why should we eat oranges?
+                <span class="content">Oranges are very good source of vitamin C, they alse keep your sugar level in check  and reduce high cholesterol to prevent cardiovascular disease</span>
+            </div>
+            <div class="tab">Why is orange orange?
+                <span class="content">The orange colour of many fruits and vegetables, such as carrots, pumpkins, sweet potatoes, and oranges, comes from carotenes, a type of photosynthetic pigment. These pigments convert the light energy that the plants absorb from the Sun into chemical energy for the plants' growth.</span>
+            </div>
+        </div>
+        <div class="active-tab">some content here displayed</div>
+    </div>
+
+    <div class="modal-button">
+        Check out newest news about oranges!
+    </div>
+
+    <div class="modal-content">
+        <div class="modal-box-content"><p>Here click this orange to see oranges wikipedia page!<p>
+            <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" target="_blank"><img src="Images/orange.jpg" alt="Click this orange" /></a>
+        </div>
+    </div>
+
+    <div class="photo-viewer-box">
+        <p class="header"><span style="color: orange;">Orange</span> Photos</p>
+        <div class="horizontal-wrapper">
+            <div class="photo-viewer">
+                <img src="Images/orange.jpg" alt="#" class="active-photo">
+                <div class="thumbnails">
+                    <img src="Images/orange.jpg" data-description="Beautiful orange with green leaf on it">
+                    <img src="Images/orangethum1.jpg" data-description ="Why not to eat that beauty!">
+                    <img src="Images/orangethumb.jpg" data-description ="You can chop oranges and add it to your tea instead of lemon!">
+                    <img src="Images/orangethumb2.jpg" data-description ="Oranges on trees are so beautiful">
+                </div>
+            </div>
+            <div class="photo-viewer-content">
+                    Content will be displayed here
+            </div>
+        </div>
+    </div>
+    <div class="slide-viewer">
+        <div class="actual-slide"><img src="Images/orange.jpg" alt=""></div>
+        <div class="slide-arrow left"></div>
+        <div class="slide-arrow right"></div>
+        <div class="slide-group">
+            <div class="slide active"><img src="Images/orange.jpg" alt=""></div>
+            <div class="slide"><img src="Images/orangethum1.jpg" alt=""></div>
+            <div class="slide"><img src="Images/orangethumb.jpg" alt=""></div>
+            <div class="slide"><img src="Images/orangethumb2.jpg" alt=""></div>
+        </div>
+        <div class="dot-group"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

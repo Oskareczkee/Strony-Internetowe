@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Bullseye math training</title>
+    </head>
+    <body>
+        <div class="header" id="header">
+            <span class="logo"><img src="Images/logo.svg" alt="Bullseye's logo"></span>
+            <div class="site-name">
+                <img id="name" src="Images/name.png" alt="Bullseye">
+                <p>Target practice for your mind</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <fieldset>
+                <legend>Generate your own multiplication table</legend>
+                <input type="text" inputmode="numeric" id="input-min" class="text" placeholder="min value">
+                <input type="text" inputmode="numeric" id="input-max" class="text" placeholder="max value">
+                <input type="submit" value="Generate" class="submit" onclick="getValuesFromForm()">
+            </fieldset>
+        </div>
+
+        <div class="content" id="board-content">
+            3*3=9 <br>4*4=16
+        </div>
+
+        <div class="footer">
+            <a href="#header">Go to top</a>
+        </div>
+    </body>
+</html>

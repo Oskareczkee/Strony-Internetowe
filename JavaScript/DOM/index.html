@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <div class="header">
+            <img src="Images/logo.svg" alt="">
+            <p>List king</p>
+        </div>
+
+        <div class="list" id="item-list">
+            <div class="list-header">My things to do</div>
+            <input type="text" class="list-item important">
+            <input type="text" class="list-item middle">
+            <input type="text" class="list-item chill">
+            <input type="text" class="list-item done">
+        </div>
+
+        <div class="form">
+            <p>Add new item</p>
+            <div>
+                <input type="text" id="item-text">
+                <select name="type" id="select-type">
+                    <option value="important" class="important">Important</option>
+                    <option value="middle" class="middle">Less important</option>
+                    <option value="chill" class="chill">Do it in free time</option>
+                    <option value="done" class="done">Done</option>
+                </select>
+            </div>
+            <button type="submit" onclick="addItemButton()">Add</button>
+        </div>
+    </body>
+</html>

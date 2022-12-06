@@ -1,0 +1,168 @@
+@keyframes tooltipAnimationFadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes tooltipAnimationFadeOut{
+    from{opacity: 1; visibility: visible;}
+    to{opacity: 0; visibility: hidden;}
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+    cursor: url("Images/cursor\ hover1.png"), auto;
+}
+
+body:active{
+    cursor: url("Images/cool\ cursor.png"), auto;
+}
+
+#logo{
+    margin-top: 50px;
+}
+
+.game{
+    display: flex;
+    align-self: center;
+
+    margin-top: 50px;
+    width: fit-content;
+    min-height: 500px;
+}
+
+.game .click-image{
+    width: 900px;
+}
+
+.game .upgrades{
+    margin-left: 20px;
+}
+
+.upgrade{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    align-content: center;
+
+    width: fit-content;
+}
+
+.game-wrapper{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.upgrade .upgrade-image{
+    width: 50px;
+    height: 50px;
+}
+
+.upgrade p{
+    width: 40px;
+    text-align: center;
+    padding: 0;
+    margin: auto 0px auto 25px;
+}
+
+.upgrade .upgrade-add{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.upgrade .upgrade-add:hover{
+    opacity: 0.8;
+}
+
+.upgrade .upgrade-cost{
+    display: flex;   
+    align-content: center;
+    margin-top: 20px;
+}
+
+.upgrade .upgrade-cost img{
+    width: 40px;
+}
+
+.upgrade .upgrade-cost p{
+    width: 40px !important;
+    text-align: center;
+}
+
+.money{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin-top: 20px;
+}
+
+.money img{
+    width: 50px ;
+    height: 50px;
+}
+
+.money p{
+    padding: 0;
+    margin: 0 0 0 30px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 200px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+   
+    position: absolute;
+    z-index: 1;
+
+    margin-top: -80px;
+    margin-left: -70px;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+
+    animation: tooltipAnimationFadeIn 1s;
+}
+
+.cottonfield-worker{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.game-music{
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 35px;
+}
+
+.game-music:hover{
+    background-color: rgb(161, 0, 0);
+}

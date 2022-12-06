@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@angular/typescript": "^2.0.0-5d0e199",
+    "@types/googlemaps": "^3.43.3",
+    "angular": "^1.8.3",
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.8.4",
+    "@types/jquery": "^3.5.14"
+  }
+}

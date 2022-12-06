@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/microsoft-ajax": "^0.0.37"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}

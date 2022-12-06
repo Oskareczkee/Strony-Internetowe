@@ -1,0 +1,220 @@
+@font-face {
+    font-family: socks;
+    src: url("Images/Argyle\ Socks\ Regular.otf");
+}
+@font-face {
+    font-family: tiempos;
+    src: url("Images/TiemposHeadline-Regular.otf");
+}
+@font-face {
+    font-family: calculator;
+    src: url("Images/Calculator.ttf");
+}
+
+:root{
+    --content-color: #03A062;
+    --content-color-faded: #03a06169;
+    --content-color-dark: #028c54;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+
+    font-family: socks;
+    font-size: 4.5rem;
+    font-weight: 500;
+
+    margin-top: 50px;
+}
+
+.wrapper{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 50px;
+}
+
+.horizontal-wrapper{
+    display: flex;
+}
+
+.center{
+    align-self: center;
+}
+
+.automat{
+    z-index: 2;
+    position: relative;
+}
+
+.automat img{
+    width: 600px;
+}
+
+#automat-price{
+    position: absolute;
+    text-align: center;
+    font-family: calculator;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--content-color-dark);
+
+    width: 45px;
+
+    left: 517px;
+    top: 220px;
+}
+
+.content{
+    position: relative;
+    border-radius: 20px;
+
+
+    background-color: black;
+
+    width: 400px;
+
+    height: fit-content;
+    padding-bottom: 10px;
+
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.content .image{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.content .content-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.content-info .producent{
+    font-family: tiempos;
+}
+
+.content-info .name{
+    font-family: tiempos;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.content-info .price{
+    font-family: tiempos;
+    margin-top: 15px;
+}
+
+.price .currency{
+    font-style: italic;
+}
+
+.content .form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin-top: 40px;
+}
+
+.switch-text{
+    font-family: tiempos;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+
+  }
+
+.switch-style{
+    margin-left: 30px;
+}
+
+.scale-switch{
+    transform: scale(1, 0.9);
+}
+
+.content .description{
+    border: 3px solid var(--content-color);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+    font-family: tiempos;
+    letter-spacing: 0.02em;
+    line-height: 1.2rem;
+}
+
+.description ul{
+    padding: 0;
+    margin: 0;
+    margin: 10px 0px;
+    padding-left: 20px;
+}
+
+.description legend{
+    border: 2px solid var(--content-color-dark);
+    background-color: var(--content-color);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.buy-button-style{
+    font-family: tiempos;
+    font-size: 0.9rem;
+    padding-top: 1px;
+}
+
+.automat-content{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+}
+
+.automat-content .automat-shelf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    top: 80px;
+    left: 65px;
+}
+
+.automat-shelf .automat-product:hover{
+    transform: scale(1.2);
+    transition: transform .4s;
+}
+
+.automat-product img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

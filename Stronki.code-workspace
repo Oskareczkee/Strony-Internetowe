@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Strony Internetowe",
+			"path": "."
+		}
+	],
+	"settings": {
+		"livePreview.defaultPreviewPath": "/Tests/CSS/BoxModel.html"
+	}
+}

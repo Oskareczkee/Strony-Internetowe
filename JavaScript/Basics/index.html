@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Basics of javascript</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img src="Images/Logo cooltext.gif" alt="Giraffe Generator">
+        </div>
+        <div class="form">
+            <form action="script.js" method="post">
+
+                <div class="input">
+                    <label class="input-title">Name</label>
+                    <input type="text" id="name"/>
+                </div>
+                <div class="input">
+                    <label for="height">Height</label>
+                    <input type="text" id="height"/>
+                </div>
+                <div class="input">
+                    <label>Gender</label>
+                    <select name="Gender" id="select-gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="lays oven baked">Lays Oven Baked</option>
+                    </select>
+                </div>
+            </form>
+                <input type="submit" value="Generate" id="submit" class="btn-grad" onclick="buttonClick()">
+        </div>
+
+        <div class="form output">
+            <img src="Images/your giraffe.gif" alt="Your giraffe" id="header">
+            <div class="pair">
+                <p class="description">Name</p><p id="name-output" class="value">jfd</p>
+            </div>
+            <div class="pair">
+                <p class="description">Gender</p><p id="gender-output" class="value">sdasdasdasd</p>
+            </div>
+            <div class="pair">
+                <p class="description">Height</p><p id="height-output" class="value">dasdasas</p>
+            </div>
+        </div>
+    </body>
+</html>

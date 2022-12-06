@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.475);
+    margin: 250px auto 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.output{
+    color: beige;
+    align-items: flex-start;
+    margin: 50px auto 0 auto;
+    padding-top: 0px;
+}
+
+.output .pair{
+    margin-left: 25%;
+    align-items: center;
+    align-content: center;
+}
+
+.output .pair p{
+    display: inline-block;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+.output .pair .description{
+    margin-right: -40px;
+    width: 100px;
+    text-align: right;
+}
+
+.output .pair .value{
+    color: orangered;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 90px;
+}
+
+.output #header
+{
+    margin: 0 auto 0 auto;
+}
+
+
+.input{
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.input label{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    padding-right: 10px;
+    color: beige;
+    font-size: 110%;
+}
+
+.input input, select{
+    border-radius: 10px;
+    outline: none;
+    color: rgb(250, 139, 3);
+    text-indent: 6px;
+}
+
+.input input:focus, select:focus
+{
+    color: rgb(250, 139, 3);
+    border: 3px solid royalblue;
+}
+
+.input select
+{
+    font-size: 0.9em;
+}
+
+.form input, select{
+    margin-right: 20px;
+    width: 150px;
+}
+
+.form input#submit
+{
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.07em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+       
+.btn-grad {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: 2px solid beige;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .header{
+    font-size: 2rem;
+    position:relative;
+    margin: auto;
+    top: 200px;
+    color: beige;
+  }
+ 

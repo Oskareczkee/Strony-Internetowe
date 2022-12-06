@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skarpetomat</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="logo">
+        SKARPETOMAT
+    </div>
+    <div class="wrapper">
+        <div class="automat" id="automat">
+            <img src="Images/automat.png" alt="automat">
+            <span id="automat-price">99,00</span>
+            <div class="automat-content" id="automat-content">
+                <div class="automat-shelf">
+                    <span class="automat-product"><img src="Images/skarpetki.png" alt="skarpetki" data-contentPath="Products/Content/white-socks.json"></span>
+                    <span class="automat-product"><img src="Images/skarpetki.png" alt="skarpetki" data-contentPath="Products/Content/white-socks.json"></span>
+                        <span class="automat-product"><img src="Images/skarpetki.png" alt="skarpetki" data-contentPath="Products/Content/white-socks.json"></span>
+                        <span class="automat-product"><img src="Images/skarpetki.png" alt="skarpetki" data-contentPath="Products/Content/white-socks.json"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <div class="horizontal-wrapper">
+                    <img src="Images/boomer socks.png" alt="socks" class="image" id="product-image">
+                    <div class="content-info">
+                        <span class="producent">Sraka</span>
+                        <span class="name">Skarpetki Boomer</span>
+                        <div style="margin-top: 15px;">
+                            <span class="price">25</span>
+                            <span class="currency">zł</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="custom-select" id="sizes">
+                        <select name="sizes">
+                            <option value="" selected hidden>Wybierz swój rozmiar</option>
+                            <option value="25">25</option><option value="26">26</option><option value="27">27</option>
+                            <option value="28">28</option><option value="29">29</option><option value="30">30</option>
+                            <option value="31">31</option><option value="32">32</option><option value="33">33</option>
+                            <option value="34">34</option><option value="35">35</option><option value="36">36</option>
+                            <option value="37">37</option><option value="38">38</option><option value="39">39</option>
+                            <option value="40">40</option><option value="41">41</option><option value="42">42</option>
+                            <option value="43">43</option><option value="44">44</option><option value="45">45</option>
+                        </select>
+                        <script src="select-script.js"></script>
+                </div>
+                <div class="horizontal-wrapper switch-style">
+                    <span class="switch-text center">Spocone</span>
+                    <label class="switch scale-switch">
+                        <input type="checkbox" id="spocone-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <fieldset class="description">
+                <legend>Opis</legend>
+                <div id="description">
+                    Firma sraka specjalizuje się w tworzeniu najbardziej spierdolonych
+                    skarpet na tym świecie. W tym modelu również nas nie zawiedli <br>
+                    Do zalet można zaliczyć: <br>
+                    <ul>
+                        <li>zjebaną jakość</li>
+                        <li>smród jakiego świat nie czuł</li>
+                        <li>zjebany młodzieżowy napis</li>
+                        <li>mylą się w rozmiarze XD bo są z chin i nie ukończyli szkoły</li>
+                    </ul>
+                    Zapraszamy do kupna i życzymy miłych zakupów
+                </div>
+            </fieldset>
+
+            <div class="buy-button buy-button-style">
+                Zamów teraz
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+.content-section table{
+    width: 50%;
+}
+
+.content-section table a{
+    text-decoration: none;
+    color: inherit;
+    transition: color .3s ease-in-out;
+}
+
+.content-section table a:hover{
+    color: orangered;
+}
+
+.content-section table td, th{
+   padding: 20px;
+   font-family: tiempos-bold;
+   text-align: left;
+}
+
+.content-section table tr{
+    background-color: #939090;
+}
+
+.content-section table tr:nth-child(even) {
+    background-color: #5d5c5c;
+    color: orange;
+}
+
+@media (max-width: 1024px) {
+
+    .content-section table td, th{
+        padding: 5px;
+        font-size: 0.8rem;
+     }
+     .content-section table{
+        width: 85%;
+    }
+}
+
+header::before{
+    background-image: url("Images/languagesbg.jpg");
+}
+
+
+.languages-table{
+    padding-bottom: 7%;
+}
+
+.languages-table .wrapper h1{
+    margin-bottom: 20px;
+}
+
+.languages-table .wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+}
+
+.languages-table::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/langtablebg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 25%;
+}
+
+#javascript::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/Languages/jsbg.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 15%;
+}
+
+#python::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/Languages/pyghtonbg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 25%;
+}
+
+#php::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/Languages/phpbg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 15%;
+}
+
+#cpp::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/Languages/cppbg.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 15%;
+}
+
+#rust::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    content: " ";
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+
+    background-image: url("Images/Languages/rustbg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    z-index: -1;
+
+    opacity: 15%;
+}
+
+
+
+.content-wrapper .lang-info{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.lang-info .name{
+    margin: 0;
+    font-family: tiempos-bold;
+    font-size: 2rem;
+    word-spacing: 0.1em;
+}
+
+.lang-info .type{
+    margin: 0;
+    font-family: tiempos-light-italic;
+    font-size: 1.3rem;
+}
+
+.lang-info .authors-and-date{
+    margin: 0;
+    font-family: tiempos-light-italic;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1024px) {
+
+    article a{
+        font-size: 0.8rem !important;
+    }
+    .lang-info .name{
+        font-size: 1.5rem;
+    }
+    
+    .lang-info .type{
+        font-size: 1rem;
+    }
+    
+    .lang-info .authors-and-date{
+        font-size: 1rem;
+    }
+
+}
+
+article p{
+    letter-spacing: 0.03em;
+}
+
+article a{
+    display: block;
+    text-decoration: none;
+    color: orangered;
+
+    font-family: tiempos-light-italic;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: color .3s ease-in-out;
+}
+
+article a:hover{
+    color: orange;
+}

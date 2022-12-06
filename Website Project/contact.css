@@ -1,0 +1,172 @@
+header::before{
+    background-image: url("Images/gatto.jpg");
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+header::before{
+    background-image: url("Images/contactbg.jpg");
+}
+
+.contact form{
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgba(56, 4, 56, 0.529);
+    border-radius: 20px;
+}
+
+.contact .form-wrapper{
+    display: flex;
+    align-self: center;
+}
+
+.form-wrapper .labels, .form-wrapper .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper .labels label{
+    margin-right: 20px;
+    display: flex;
+    font-family: tiempos-bold;
+    justify-content: right;
+    align-items:center;
+    color: orange;
+}
+
+
+
+.inputs>*:not(textarea), .labels>*{
+    margin: 2.5vh 0vw;
+    height: 20px;
+    font-family: tiempos-light;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0px;
+    /*jakimś cudem border sprawia, że tekst wyrównuje sie z inputami*/
+    border: 2px solid transparent;
+}
+
+.form-wrapper .inline-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs span input:not(input[type="radio"]){
+    height: 20px;
+    width: 45%;
+    font-family: tiempos-light;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding: 0px;
+    /*jakimś cudem border sprawia, że tekst wyrównuje sie z inputami*/
+    border: 2px solid transparent;
+}
+
+.form-wrapper .inputs > textarea{
+    font-family: tiempos-light;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-wrapper .inputs button{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px 10px;
+    border: 0px solid transparent;
+
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);    
+}
+@keyframes gradient-hover {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-wrapper .inputs button:hover{
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    background-size: 400% 400%;
+    animation: gradient-hover 5s ease infinite;
+    animation-fill-mode:forwards;        
+}
+
+.form-wrapper .inputs .buttons{
+    margin: 0.5vh 0vw;
+    align-self: flex-end;
+}
+
+.contact .inline-wrapper{
+    display: flex;
+}
+
+
+.contact form p{
+    margin: 1vh 0vw;
+    font-family: tiempos-bold;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+    color:orangered;
+    align-self: center;
+    text-align: center;
+}
+
+@media (max-width: 1024px){
+    .form-wrapper .inputs > *:not(textarea), .form-wrapper .labels > *{
+        height: 10px;
+        font-size: 0.7rem;
+    }
+    .inputs span input:not(input[type="radio"]){
+        height: 10px;
+        font-size: 0.7rem;
+    }
+    
+    .form-wrapper .inputs > select{
+        height: 15px;
+        font-size: 0.7rem;
+    }
+    
+    .form-wrapper .inputs > textarea{
+        font-size: 0.8rem;
+    }
+    
+    .form-wrapper .inputs button{
+        font-size: 0.7rem;
+    }
+    
+    .inputs > *{
+        width: 80%;
+    }
+    
+    .contact form p{
+        font-size: 0.8rem;
+        margin-bottom: 3vh;
+    }
+
+    .contact form{
+        width: 80%;
+        padding: 6% 2%;
+    }
+}

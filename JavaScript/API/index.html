@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I KNOW EVERYTHING!!!</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqURPxsY2W2hgdeS78r6CLjIAgNlzwtj8&callback=initMap&v=weekly"></script>
+</head>
+<body>
+    <section class="header">
+        I know everything about you
+    </section>
+    
+    <section class="content">
+        <div id="map"></div>
+
+        <div class="info">
+                <p>Your IP address: <span id="ip"></span></p>
+                <p>Latitude: <span id="latitude"></span></p>
+                <p>Longtitude: <span id="longtitude"></span></p>
+                <p>Altitude: <span id="altitude"></span></p>
+                <p>Your actual speed: <span id="speed"></span></p>
+                <p>Address: <span id="address"></span></p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

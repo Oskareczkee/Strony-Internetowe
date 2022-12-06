@@ -1,0 +1,110 @@
+@font-face {
+    font-family: fancy;
+    src: url("Images/Lemon\ Days.ttf");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Images/Raleway-Regular.ttf");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.header{
+    align-self: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.header p{
+    align-self: center;
+
+    width: 0px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0px;
+
+    text-align: center;
+    font-family: fancy;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.board{
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.board table{
+    border-collapse: collapse;
+}
+
+.board td{
+    border-bottom: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    padding: 100px;
+}
+
+.board td.topmiddle{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.board td.bottom{
+    border-bottom: 0px !important;
+}
+
+.board td.bottommiddle{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 0px !important;
+}
+
+.board td.o{
+    background-image: url("Images/O.svg");
+}
+
+.board td.x{
+    background-image: url("Images/X.svg");
+}
+
+.board td.oPreview{
+    background-image: url("Images/O.svg");
+    opacity: .1;
+}
+.board td.xPreview{
+    background-image: url("Images/X.svg");
+    opacity: .1;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.scoreboard div{
+    margin: 0 50px 0 50px;
+
+    font-weight:900;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    text-align: center;
+}

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: chalkboard;
+    src: url("Images/ChalkBoard-jERd7.ttf");
+}
+
+body{
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+.header .logo{
+    margin-right: 20px;
+
+    width: 125px;
+    height: 125px;
+    flex-shrink: 0.1;
+}
+
+.header .site-name{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .site-name #name{
+    width: 400px;
+    height: 75px;
+}
+
+.header .site-name p{
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: monospace;
+
+    margin: 20px 0 0 0;
+
+    color: darkslategray;
+    text-shadow: 2px 0px 0px rgb(190, 175, 175);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    border: 2px solid rgb(38, 52, 52);
+    border-radius: 10px;
+    border-width: 20px;
+    background-color: rgb(0, 48, 0);
+
+    width: 75%;
+    min-height: 500px;
+    margin: 100px auto 20px auto;
+
+    justify-content: center;
+    color: #FBF7F5;
+    font-size: 3rem;
+    font-family: chalkboard;
+    line-height: 60px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer{
+    font-size: 20pt;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: chalkboard;
+}
+
+.footer a:hover{
+    color: rgb(57, 120, 120);
+}
+
+.form{
+    align-self: center;
+    margin-top: 70px;
+}
+
+.form fieldset{
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.form legend{
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    background-color: goldenrod;
+    font-size: 1.1rem;
+    padding: 5px;
+    color: white
+}
+
+.form .text{
+    border-radius: 8px;
+    text-indent: 5px;
+    min-width: 90px;
+}
+
+.form .submit{
+    border-radius: 10px;
+    background-color: goldenrod;
+    border: 2px solid rgb(136, 99, 4);
+    padding: 0px 15px 0px 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form .submit:hover{
+    background-color: rgb(101, 73, 1);
+    color: goldenrod;
+}

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Tic tac toe</title>
+    </head>
+    <body>
+        <div class="header" id="header">
+            <img src="Images/icon.svg" alt="Tic tac toe">
+            <p>tic tac toe</p>
+        </div>
+
+        <div class="board">
+            <table id="gameboard">
+                <tr>
+                    <td class="" data-state="empty"></td>
+                    <td class="topmiddle" data-state="empty"></td>
+                    <td class="" data-state="empty"></td>
+                </tr>
+                <tr>
+                    <td class="" data-state="empty"></td>
+                    <td class="topmiddle" data-state="empty"></td>
+                    <td class="" data-state="empty"></td>
+                </tr>
+                <tr>
+                    <td class="bottom" data-state="empty"></td>
+                    <td class="bottommiddle" data-state="empty"></td>
+                    <td class="bottom" data-state="empty"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="scoreboard">
+            <div>
+                <p>X</p>
+                <p id="XWins">0</p>
+            </div>
+            <div>
+                <p>Tie</p>
+                <p id="Ties">0</p>
+            </div>
+            <div>
+                <p>O</p>
+                <p id="OWins">0</p>
+            </div>
+        </div>
+    </body>
+</html>
