@@ -60,54 +60,62 @@
                 <h3>Check who is waiting for you!</h3>
                 <p>If you want to know more about kitten, just click on it!</p>
             </div>
+
+            <div class="filters">
+                <div>
+                    <input list="races" name="searchRace" id="race-search" placeholder="Choose by race"/>
+                    <input list="colors" name="searchRace" id="color-search" placeholder="Choose by color"/>
+                </div>
+                <input type="button" value="Search" id="search-button" />
+            </div>
             
-            <div class="cats-container">
+            <div class="cats-container" id="cats">
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="persian" data-color="white">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Norwegian-forest-cat" data-color="black">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Mine-coon" data-color="red">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="ragdoll" data-color="brown">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Brithish-shorthair" data-color="red">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Scotish-straight" data-color="white">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Munchkin" data-color="brown">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="persian" data-color="black">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Munchkin" data-color="brown">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Scotish-straight" data-color="black">
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="Brithish-shorthair" data-color="white"> 
                     <p>Ron</p>
                 </div>
                 <div class="cat">
-                    <img src="Images/cat.jpg" alt="">
+                    <img src="Images/cat.jpg" alt="" data-race="ragdoll" data-color="brown">
                     <p>Ron</p>
                 </div>
                 
@@ -116,12 +124,11 @@
     </div>
 </div>
 
-
-<datalist id="sorting-options">
-    <option value="Name"></option>
-    <option value="Color"></option>
-</datalist>
-
+<datalist id="colorsList"></datalist>
+<datalist id="racesList"></datalist>
 </body>
 
+
+
+<script src="script.js"></script>
 </html>

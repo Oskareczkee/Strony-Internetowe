@@ -217,12 +217,38 @@ body{
     margin-top: 10px;
 }
 
+.cats-content .filters{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.cats-content .filters input{
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.cats-content .filters input[type="button"]{
+    color: white;
+    font-family: tiempos;
+    background-color: rgba(128, 128, 128, 0.535);
+    transition: all .2s ease-in-out;
+}
+
+.cats-content .filters input[type="button"]:hover{
+    transform: scale(1.02);
+    color: rgb(87, 87, 87);
+}
+
 .cats-content .cats-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-self: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;
 
     margin: 0px 5%;
 }
@@ -238,7 +264,7 @@ body{
     box-shadow: 0 0 10px black;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    margin-top: 5%;
+    margin-top: 3%;
 
     transition: transform .3s ease-in-out;
 }
