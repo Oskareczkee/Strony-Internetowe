@@ -34,6 +34,7 @@ body{
     height: 25px;
 }
 
+
 .missile
 {
     background-image: url("img/spaceship.png");
@@ -56,6 +57,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;    
 }
+
 
 .building{
     background-image: url("img/building.png");
@@ -113,7 +115,7 @@ body{
     gap: 10px;
     padding: 15px 20px;
     margin-bottom: 50px;
-
+    
     background-color: rgba(0, 0, 0, 0.545);
 }
 
@@ -143,4 +145,47 @@ body{
 .game-options button:hover{
     background-color: rgb(251, 101, 46);
     transform: scale(1.02);
+}
+
+
+/*For phones and smaller screens*/
+@media (max-width: 640px)
+{
+    *{
+        font-size: 0.8rem
+    }
+
+    .container tr, td{
+        padding: 3px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .container table{
+        border-spacing: 2px;
+    }
+    .missile:not(.used):hover{
+        transform: translateX(-5px) rotate(-90deg); 
+    }
+    .logo{
+        height: 20vh;
+        width: 40%;
+    }
+
+    .controls .game-controls button{
+        width: 70px;
+    }
+
+    .controls .game-options{
+        border: 3px solid white;
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.661);
+        gap: 5px;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+    }
+
+    .game-options span{
+        width: 200px;
+        gap: 5px;
+    }
 }
